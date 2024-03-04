@@ -16,5 +16,7 @@ model_inputs = tokenizer([prompt], return_tensors="pt").to("cuda")
 generated_ids = model.generate(**model_inputs, max_new_tokens=100, do_sample=True)
 outputs = tokenizer.batch_decode(generated_ids)
 
+#MODIFICACIÓN
+
 for x in outputs:
     print(x)
