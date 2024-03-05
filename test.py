@@ -14,7 +14,7 @@ input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
 
 outputs = model.generate(**input_ids)
 
-#MODIFICACIÓN
+#MODIFICACIÓN2
 
 for x in outputs:
     print(tokenizer.decode(x))
